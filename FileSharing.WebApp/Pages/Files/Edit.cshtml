@@ -1,0 +1,32 @@
+﻿@page
+@model FileSharing.WebApp.Pages.Files.EditModel
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2> Upload a File</h2>
+
+<form method="post" class="mt-3" enctype="multipart/form-data">
+    <input hidden asp-for="File.Id" />
+    <div class="form-group row">
+        <label asp-for="InputFile" class="col-sm-2 col-form-label">File</label>
+        <div class="col-sm-10">
+            <div class="custom-file">
+                <input asp-for="InputFile" class="custom-file-input form-control" type="file">
+            </div>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Expiration (minutes)</label>
+        <div class="col-sm-10">
+            <input asp-for="Expiration" type="number" class="form-control">
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-sm-10">
+            <button type="submit" class="btn btn-primary">Update</button>
+            <a asp-page="/Files/Index" class="btn btn-primary">Cancel</a>
+        </div>
+    </div>
+</form>
+

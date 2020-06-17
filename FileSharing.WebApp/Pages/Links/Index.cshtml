@@ -1,0 +1,47 @@
+﻿@page "{id}"
+@model FileSharing.WebApp.Pages.Links.IndexModel
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Links</h2>
+<form method="post">
+    @Html.HiddenFor(x => x.FileId)
+    @Html.Hidden("selectedLinkId", -1)
+
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th><input type="submit" class="btn btn-success" value="+" asp-page-handler="Add" /></th>
+                <th>Email</th>
+                <th>URL</th>
+                <th>Downloaded</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.Links != null)
+            {
+                for (int i = 0; i < Model.Links.Count; i++)
+                {
+                    <tr>
+                        <td>
+                            <a asp-page="/Links/Edit" class="btn btn-primary" asp-route-ID="@Model.Links[i].Id">Edit</a>
+                            <input type="submit" class="btn btn-danger" value="-" onclick="SetSelectedLink(@Model.Links[i].Id);" name="ActiveI" asp-page-handler="Remove" />
+                        </td>
+                        <td>@Html.DisplayFor(m => m.Links[i].Email, new { @type = "email", @class = "form-control" })</td>
+                        <td>@Model.BaseURL/@Model.Links[i].Url</td>
+                        <td>@Model.Links[i].Count</td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</form>
+
+
+<script>
+    function SetSelectedLink(i) {
+        document.getElementById('selectedLinkId').value = i;
+    }
+</script>

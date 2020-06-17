@@ -1,0 +1,45 @@
+﻿@page
+@model FileSharing.WebApp.Pages.Files.IndexModel
+@{
+    ViewData["Title"] = "Files";
+}
+
+<h2>Files</h2>
+<form method="post">
+@Html.Hidden("selectedFileId", -1)
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Name</th>
+                <th>Created</th>
+                <th>Expire</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @if (Model.Files != null)
+            {
+                for (int i = 0; i < Model.Files.Count; i++)
+                {
+                    <tr>
+                        <td>
+                            <a asp-page="/Links/Index" class="btn btn-primary" asp-route-ID="@Model.Files[i].Id">Details</a>
+                            <input type="submit" class="btn btn-danger" value="Remove" onclick="SetSelectedFile(@Model.Files[i].Id);" name="ActiveI" asp-page-handler="Remove" />
+                        </td>
+                        <td>@Model.Files[i].Name</td>
+                        <td>@Model.Files[i].DateCreated</td>
+                        <td>@Model.Files[i].DateExpiredOn</td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</form>
+
+<script>
+    function SetSelectedFile(i) {
+        document.getElementById('selectedFileId').value = i;
+    }
+</script>

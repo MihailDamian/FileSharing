@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileSharing.Core", "FileSharing.Core\FileSharing.Core.csproj", "{C4552F05-1F91-4B98-AAB1-5487E3B37BE3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileSharing.WebApp", "FileSharing.WebApp\FileSharing.WebApp.csproj", "{F26B8AE6-6EBE-47D1-B5A6-4B5C521AF5CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C4552F05-1F91-4B98-AAB1-5487E3B37BE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4552F05-1F91-4B98-AAB1-5487E3B37BE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4552F05-1F91-4B98-AAB1-5487E3B37BE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4552F05-1F91-4B98-AAB1-5487E3B37BE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F26B8AE6-6EBE-47D1-B5A6-4B5C521AF5CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F26B8AE6-6EBE-47D1-B5A6-4B5C521AF5CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F26B8AE6-6EBE-47D1-B5A6-4B5C521AF5CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F26B8AE6-6EBE-47D1-B5A6-4B5C521AF5CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CF5459E0-ADD7-480F-B6F6-3EFC208D7625}
+	EndGlobalSection
+EndGlobal

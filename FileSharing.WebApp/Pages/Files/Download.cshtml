@@ -1,0 +1,30 @@
+﻿@page "{id}"
+@model FileSharing.WebApp.Pages.Files.DownloadModel
+
+
+<form method="post">
+    <div class="text-center">
+        @if (Model.File == null)
+        {
+            <div class="alert alert-danger" role="alert">
+                File not found.
+            </div>
+        }
+        else
+        {
+            <div class="alert alert-info" role="alert">
+                @Model.File.Name
+            </div>
+            @if (Model.File.DateExpiredOn > DateTime.Now)
+            {
+                <button type="submit" class="btn btn-primary">Download</button>
+            }
+            else
+            {
+                <div class="alert alert-danger" role="alert">
+                    This file can no longer be downloaded
+                </div>
+            }
+        }
+    </div>
+</form>

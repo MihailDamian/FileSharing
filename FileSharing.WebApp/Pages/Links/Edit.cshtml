@@ -1,0 +1,20 @@
+﻿@page "{id}"
+@model FileSharing.WebApp.Pages.Links.EditModel
+
+
+<h2>Links</h2>
+<form method="post" class="mt-3" enctype="multipart/form-data">
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Email</label>
+        <div class="col-sm-10">
+            <input asp-for="Link.Email" name="email"  type="email" class="form-control">
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <div class="col-sm-10">
+            <button type="submit" class="btn btn-primary" asp-page-handler="Save">Save and send email</button>
+            <a asp-page="/Links/Index" class="btn btn-primary" asp-route-ID="@Model.Link.FileId">Cancel</a>
+        </div>
+    </div>
+</form>

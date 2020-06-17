@@ -1,0 +1,8 @@
+E:\projects\FileSharingCoreMVC\FileSharing\FileSharing.App\bin\Debug\netstandard2.0\FileSharing.App.deps.json
+E:\projects\FileSharingCoreMVC\FileSharing\FileSharing.App\bin\Debug\netstandard2.0\FileSharing.App.dll
+E:\projects\FileSharingCoreMVC\FileSharing\FileSharing.App\bin\Debug\netstandard2.0\FileSharing.App.pdb
+E:\projects\FileSharingCoreMVC\FileSharing\FileSharing.App\obj\Debug\netstandard2.0\FileSharing.App.csprojAssemblyReference.cache
+E:\projects\FileSharingCoreMVC\FileSharing\FileSharing.App\obj\Debug\netstandard2.0\FileSharing.App.AssemblyInfoInputs.cache
+E:\projects\FileSharingCoreMVC\FileSharing\FileSharing.App\obj\Debug\netstandard2.0\FileSharing.App.AssemblyInfo.cs
+E:\projects\FileSharingCoreMVC\FileSharing\FileSharing.App\obj\Debug\netstandard2.0\FileSharing.App.dll
+E:\projects\FileSharingCoreMVC\FileSharing\FileSharing.App\obj\Debug\netstandard2.0\FileSharing.App.pdb
