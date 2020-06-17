@@ -10,5 +10,6 @@
 	1. FileSharingDatabase attribute from FileSharing.WebApp Application, file appsettings.json 
 	
 -Run FileSharing.WebApp Project
+
 -Enjoy
  
